@@ -1,0 +1,17 @@
+{
+  "name": "easy-pattern-matching",
+  "version": "1.0.0",
+  "description": "",
+  "main": "matcher.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0"
+  }
+}
