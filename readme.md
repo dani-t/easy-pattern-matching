@@ -6,8 +6,23 @@
 
 ```
 match("bla")(
-  Case(5, 4),
+  Case(5, "five"),
   Case(value => value === "y", value => "Y" + value),
   Case(other(), "other branch")
 )
+// returns "other branch"
+
+match(5)(
+  Case(5, "five"),
+  Case(value => value === "y", value => "Y" + value),
+  Case(other(), "other branch")
+)
+// returns "five"
+
+match("y")(
+  Case(5, "five"),
+  Case(value => value === "y", value => "Y" + value),
+  Case(other(), "other branch")
+)
+// returns "Yy"
 ```
